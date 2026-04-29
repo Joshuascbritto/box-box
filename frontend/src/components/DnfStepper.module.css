@@ -1,0 +1,73 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.label {
+  font-weight: 500;
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+}
+
+.range {
+  color: var(--ink-muted);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 44px minmax(60px, 1fr) 44px;
+  border: 1px solid var(--rule-strong);
+}
+
+.btn {
+  border: none;
+  border-right: 1px solid var(--rule);
+  padding: 12px 0;
+  font-family: var(--font-mono);
+  font-size: 18px;
+  background: transparent;
+  color: var(--ink);
+}
+
+.row .btn:last-child {
+  border-right: none;
+  border-left: 1px solid var(--rule);
+}
+
+.btn:hover {
+  background: var(--paper-shade);
+}
+
+.btn:disabled {
+  color: var(--ink-muted);
+  background: transparent;
+}
+
+.input {
+  border: none;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 18px;
+  font-weight: 500;
+  background: transparent;
+  -moz-appearance: textfield;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

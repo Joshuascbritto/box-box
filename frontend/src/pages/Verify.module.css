@@ -1,0 +1,38 @@
+.wrap {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.stamp {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border: 2px solid currentColor;
+  transform: rotate(-2deg);
+}
+
+.ok   { color: var(--status-finished); }
+.fail { color: var(--accent); }
+
+.msg {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-muted);
+  max-width: 64ch;
+}
+
+.back {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: 2px;
+}

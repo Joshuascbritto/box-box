@@ -1,0 +1,67 @@
+.wrap {
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+}
+
+.title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 10px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.label { color: var(--ink); }
+
+.dots {
+  border-bottom: 1px dotted var(--rule);
+  height: 0;
+  align-self: center;
+}
+
+.value {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.zero { color: var(--ink-muted); }
+
+.total {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 6px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.totalValue {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  color: var(--ink);
+  font-size: 16px;
+}

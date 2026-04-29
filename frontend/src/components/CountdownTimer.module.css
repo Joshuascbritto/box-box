@@ -1,0 +1,35 @@
+.timer {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.compact {
+  font-size: 12px;
+}
+
+.value {
+  font-weight: 500;
+  display: inline-block;
+  min-width: 1.6em;
+  text-align: right;
+}
+
+.unit {
+  color: var(--ink-muted);
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+  margin-right: 4px;
+  text-transform: uppercase;
+}
+
+.done {
+  color: var(--status-locked);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+}

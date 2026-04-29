@@ -1,0 +1,17 @@
+.ann {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.bracket { opacity: 0.6; }
+.body    { font-variant-numeric: tabular-nums; }
+
+.accent   { color: var(--accent); }
+.positive { color: var(--status-finished); }
+.warning  { color: var(--status-locked); }

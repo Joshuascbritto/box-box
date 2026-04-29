@@ -1,0 +1,340 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bannerHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.round {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: var(--font-mono);
+}
+
+.roundLabel {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.roundNumber {
+  font-size: 28px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -0.012em;
+  line-height: 1.1;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+  flex-wrap: wrap;
+}
+
+.dot { opacity: 0.5; }
+
+.schematic {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  color: var(--rule-strong);
+  margin-top: 8px;
+}
+
+.countdown {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.formPane {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 28px;
+  align-items: start;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid var(--rule-strong);
+  padding: 28px;
+}
+
+.formHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.formTitle {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+
+.pickers {
+  display: grid;
+  gap: 16px;
+}
+
+.submitRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+}
+
+.cta {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
+  padding: 14px 22px;
+}
+
+.cta:disabled {
+  background: var(--ink-muted);
+  border-color: var(--ink-muted);
+}
+
+.cta:hover:not(:disabled) {
+  border-color: var(--ink);
+}
+
+.scoringNote {
+  position: sticky;
+  top: 100px;
+}
+
+.formError {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.inlineLink {
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule-strong);
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+
+.locked {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid var(--rule-strong);
+  padding: 24px;
+}
+
+.lockedLead {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+}
+
+.tally {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 8px 0 16px;
+}
+
+.tallyRow {
+  display: grid;
+  grid-template-columns: 50px 1fr 200px 50px;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.tallyCode {
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+.tallyName { color: var(--ink-muted); }
+
+.tallyBar {
+  height: 6px;
+  background: transparent;
+  border: 1px solid var(--rule);
+  position: relative;
+  overflow: hidden;
+}
+
+.tallyBar > span {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+}
+
+.tallyPct {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.subhead {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.predTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid var(--rule-strong);
+  font-size: 13px;
+}
+
+.predTable th, .predTable td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+}
+
+.predTable th {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  font-weight: 400;
+}
+
+.tdMono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.finished {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.classification, .yourScore {
+  border: 1px solid var(--rule-strong);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.classHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.podiumList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.podiumItem {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  align-items: baseline;
+}
+
+.podiumPos {
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+}
+
+.podiumName {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.podiumTeam {
+  font-size: 11px;
+  color: var(--ink-muted);
+  text-align: right;
+}
+
+.dnfRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding-top: 6px;
+}
+
+.dnfValue {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.error {
+  padding: 48px 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .formPane { grid-template-columns: 1fr; }
+  .scoringNote { position: static; }
+  .finished { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .schematic { display: none; }
+  .title { font-size: 28px; }
+}

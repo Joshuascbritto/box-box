@@ -1,0 +1,36 @@
+.wrap {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: var(--rule);
+  position: relative;
+  overflow: hidden;
+}
+
+.fill {
+  position: absolute;
+  inset: 0;
+  width: 30%;
+  background: var(--ink);
+  animation: slide 1.4s linear infinite;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+@keyframes slide {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}

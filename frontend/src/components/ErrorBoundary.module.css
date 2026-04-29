@@ -1,0 +1,34 @@
+.wrap {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.stamp {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  transform: rotate(-2deg);
+}
+
+.msg {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-muted);
+  max-width: 64ch;
+}
+
+.reload {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  padding: 8px 14px;
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="0" y="0" width="32" height="32" fill="#F4F0E6"/>
+  <rect x="2" y="2" width="28" height="28" fill="none" stroke="#1B2838" stroke-width="1.5"/>
+  <text x="16" y="20" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#1B2838" letter-spacing="0.4">b·b</text>
+  <rect x="2" y="2" width="6" height="6" fill="#E10600"/>
+</svg>

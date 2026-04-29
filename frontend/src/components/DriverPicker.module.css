@@ -1,0 +1,42 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.position {
+  font-weight: 500;
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+}
+
+.lead { color: var(--ink-muted); opacity: 0.6; }
+
+.metal { color: var(--ink-muted); }
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--paper);
+  border: 1px solid var(--rule-strong);
+  padding: 12px 14px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink);
+  width: 100%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M2 2l4 4 4-4' fill='none' stroke='%235A6B7C' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}

@@ -1,0 +1,57 @@
+.dim {
+  display: flex;
+  align-items: center;
+  color: var(--ink-muted);
+}
+
+.horizontal {
+  flex-direction: row;
+  width: 100%;
+  gap: 8px;
+}
+
+.vertical {
+  flex-direction: column;
+  height: 100%;
+  width: 16px;
+  gap: 6px;
+}
+
+.line {
+  background: var(--rule-strong);
+  flex: 1 1 auto;
+}
+
+.horizontal .line { height: 1px; }
+.vertical .line   { width: 1px; }
+
+.tickStart, .tickEnd {
+  background: var(--rule-strong);
+  flex-shrink: 0;
+}
+
+.horizontal .tickStart, .horizontal .tickEnd {
+  width: 1px;
+  height: 8px;
+}
+
+.vertical .tickStart, .vertical .tickEnd {
+  height: 1px;
+  width: 8px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0 6px;
+  flex-shrink: 0;
+}
+
+.vertical .label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 6px 0;
+}

@@ -1,0 +1,46 @@
+# fly.toml — box-box backend
+#
+# Defaults are intentionally modest. Tune `min_machines_running` and
+# `auto_stop_machines` to taste once you have real traffic.
+
+app = "box-box-api"
+primary_region = "gru"  # São Paulo — change to your nearest region
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  APP_ENV = "production"
+  APP_DEBUG = "false"
+  LOG_CHANNEL = "stderr"
+  LOG_LEVEL = "info"
+  DB_CONNECTION = "pgsql"
+  SESSION_DRIVER = "database"
+  CACHE_STORE = "database"
+  QUEUE_CONNECTION = "database"
+  MAIL_MAILER = "resend"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["app"]
+
+  [http_service.concurrency]
+    type = "requests"
+    soft_limit = 200
+    hard_limit = 250
+
+  [[http_service.checks]]
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "20s"
+    method = "GET"
+    path = "/up"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
+  cpus = 1

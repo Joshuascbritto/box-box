@@ -1,0 +1,21 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+  color: var(--ink-muted);
+  border: 1px solid var(--rule);
+  padding: 6px 10px;
+  background: transparent;
+}
+
+.toggle .active {
+  color: var(--ink);
+}
+
+.divider {
+  opacity: 0.5;
+}

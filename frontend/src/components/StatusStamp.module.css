@@ -1,0 +1,33 @@
+.stamp {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1.5px solid currentColor;
+  transform: rotate(-2.5deg);
+  transform-origin: center;
+  user-select: none;
+  font-weight: 500;
+}
+
+.small {
+  font-size: 10px;
+  padding: 3px 7px;
+  letter-spacing: 0.14em;
+}
+
+.upcoming {
+  color: var(--status-upcoming);
+}
+
+.locked {
+  color: var(--status-locked);
+  transform: rotate(-3.5deg);
+}
+
+.finished {
+  color: var(--status-finished);
+  transform: rotate(-1.8deg);
+}

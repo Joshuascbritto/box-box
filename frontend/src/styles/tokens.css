@@ -1,0 +1,64 @@
+/*
+ * box-box · design system
+ *
+ * FORBIDDEN:
+ *   - rounded corners (border-radius > 0)
+ *   - drop shadows / box-shadows
+ *   - gradients (use solid colors or paper texture only)
+ *   - emojis in UI (data is fine: country flags)
+ *   - glassmorphism, neumorphism, any "ism"
+ *   - hero illustrations of cars, helmets, trophies
+ *   - checkered flag patterns anywhere
+ *   - color other than --accent for CTAs
+ */
+
+:root {
+  /* Paper / canvas */
+  --paper:        #F4F0E6;
+  --paper-shade:  #E8E2D2;
+  --ink:          #1B2838;
+  --ink-muted:    #5A6B7C;
+  --rule:         #B8A878;
+  --rule-strong:  #2A3850;
+
+  /* Accent — used sparingly */
+  --accent:       #E10600;
+  --accent-soft:  #FFE5E5;
+
+  /* Status (race lifecycle) */
+  --status-upcoming: #1B2838;
+  --status-locked:   #B8860B;
+  --status-finished: #2D5016;
+
+  /* Typography */
+  --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-body:    'Inter Tight', system-ui, -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, Consolas, 'Courier New', monospace;
+
+  /* Layout */
+  --container-max: 1280px;
+  --gutter: 32px;
+  --grid-cols: 12;
+
+  /* Motion */
+  --t-fast: 100ms ease-out;
+  --t-base: 150ms ease-out;
+  --t-slow: 250ms ease-out;
+}
+
+[data-theme='dark'] {
+  /* Blueprint Negative */
+  --paper:        #0A1F3D;
+  --paper-shade:  #122B4F;
+  --ink:          #E8E2D2;
+  --ink-muted:    #B8C8D8;
+  --rule:         #4A6B8A;
+  --rule-strong:  #B8C8D8;
+
+  --accent:       #E10600;
+  --accent-soft:  #2A1F2F;
+
+  --status-upcoming: #E8E2D2;
+  --status-locked:   #C9A227;
+  --status-finished: #6FA85B;
+}
